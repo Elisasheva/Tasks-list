@@ -2,6 +2,7 @@
     const tasks = [
     ];
 
+
     const addNewTask  = (newTask) => {
         tasks.push({
             content: newTask,
@@ -10,10 +11,11 @@
         render();
     };
 
-    const removeTask = (index) => {
-        tasks.splice(index, 1);
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
             render();
     }
+
 
     const render = () => {
         let htmlString = "";
@@ -35,9 +37,9 @@
             removeButton.addEventListener("click", () => {
                 removeTask(index);
             });
-        )};
+        });
     };
-    
+
 
 
     const onFormSubmit = (event) => {
@@ -50,7 +52,7 @@
         }
 
         addNewTask(newTask);
-    }
+    };
 
     const init = () => {
         render();
