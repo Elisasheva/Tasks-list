@@ -9,6 +9,9 @@
         });
 
         render();
+
+        const form = document.querySelector(".js-form");
+        form.reset();
     };
 
     const removeTask = (taskIndex) => {
@@ -45,7 +48,7 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li ${task.done ? "style=\"text-decoration: line-through\"" : ""}>
+            <li ${task.done ? "style=\"color: green\"" : ""}>
             <button class="js-done">V</button>
             <button class="js-clear">x</button>
                 ${task.content}
@@ -72,12 +75,15 @@
         addNewTask(newTask);
     };
 
+    
+
     const init = () => {
         render();
 
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
+
     };
 
     init();
