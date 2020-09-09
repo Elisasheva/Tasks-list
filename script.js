@@ -16,7 +16,7 @@
 
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
-            render();
+        render();
     }
 
     const toggleTaskDone = (taskIndex) => {
@@ -48,12 +48,13 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li ${task.done ? "style=\"color: #31af31\"" : ""}>
+            <li>
             <div class="buttons__container">
-            <button class="js-done">Done</button>
-            <button class="js-clear">Clear</button>
+            <button class="js-done">✓</button>
+            <button class="js-clear"> <img src="https://icons-for-free.com/iconfiles/png/512/trash+bin+icon-1320086460670911435.png" width="20px"></button>
             
-                ${task.content}
+                <span ${task.done ? "style=\"text-decoration: line-through\"" : ""}>${task.content}</span>
+                
                 </div>
             </li>
             `;
