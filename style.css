@@ -101,3 +101,32 @@ header {
     justify-content: flex-start;
     margin: 6px;
 }
+
+@media (max-width: 750px) {
+
+    .tasks__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tasks__submit {
+        width: 300px;
+        margin: 10px 0 0 0;
+        height: 50px;
+        border-radius: 30px;
+    }
+
+    .tasks__input {
+        width: 300px;
+        margin: 0;
+    }
+
+    .tasks__list {
+        padding:0;
+        margin:0;
+        font-size: 17px;
+    }
+
+
+}
