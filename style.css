@@ -1,0 +1,56 @@
+body {
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+    background-color: hsl(180, 32%, 72%);
+    font-family: Montserrat;
+}
+
+header {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tasks__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.tasks__input {
+    padding:10px;
+    width: 300px;
+    font-size: 18px;
+}
+
+.tasks__list__container {
+    display: flex;
+    justify-content: center;
+}
+
+.tasks__list {
+    list-style-type: none;
+    width: 900px;
+    font-size: 20px;
+}
+
+.js-done {
+    padding:6px;
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+}
+
+.js-clear {
+    margin-right: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.buttons__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
