@@ -49,8 +49,8 @@
         for (const task of tasks) {
             htmlString += `
             <li>
-            <div style="border-bottom: 1px solid #877f5a" class="buttons__container">
-            <button class="js-done">✓</button>
+            <div style="border-bottom: 1px solid #877f5a; padding: 20px;" class="buttons__container">
+            <button class="js-done">${task.done ? "✓" : ""}</button>
             <button class="js-clear"> <img src="https://icons-for-free.com/iconfiles/png/512/trash+bin+icon-1320086460670911435.png" width="20px"></button>
             
                 <span ${task.done ? "style=\"text-decoration: line-through\"" : ""}>${task.content}</span>

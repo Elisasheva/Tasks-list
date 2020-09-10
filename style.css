@@ -1,3 +1,7 @@
+* {
+    box-sizing: inherit;
+}
+
 body {
     background-repeat: no-repeat;
     background-position-x: center;
@@ -56,30 +60,26 @@ header {
     background-color: rgb(199, 75, 147);
 }
 
-.tasks__list__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 34px;
+.tasks__list {
+    list-style: none;
 }
 
-.tasks__list {
-    list-style-type: none;
-    width: 800px;
-    font-size: 20px;
-    margin: 50px;
+.tasks__container {
+    max-width: 1200px;
+    margin: auto;
 }
+
 
 .js-done {
-    margin: 4px;
-    border: 0;
-    background: none;
+    margin: 8px;
     border: none;
+    width:20px;
+    height: 30px;
+    background: rgb(21, 90, 99);
     outline: none;
     cursor: pointer;
-    font-size: 34px;
-    color: rgb(21, 90, 99);
-    margin-right: 20px;
+    font-size: 25px;
+    color:  hsl(53, 24%, 93%);
 }
 
 .js-clear {
