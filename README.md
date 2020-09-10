@@ -8,4 +8,4 @@ It's a simple program written in JavaScript for creating quick and simple task l
 
 ## Screenshot
 
-![screenshot](https://i.ibb.co/jf6sGYQ/task-list.jpg)
+![screenshot](https://i.ibb.co/r6vSdT0/task-list-kopia.jpg)
