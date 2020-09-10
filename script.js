@@ -53,7 +53,7 @@
             <button class="js-done button__done">${task.done ? "✓" : ""}</button>
             <button class="js-clear button__clear"> <img src="https://icons-for-free.com/iconfiles/png/512/trash+bin+icon-1320086460670911435.png" width="20px"></button>
             
-                <span style="padding-top: 4px;" ${task.done ? "style=\"text-decoration: line-through\"" : ""}>${task.content}</span>
+                <span ${task.done ? "style=\"text-decoration: line-through; padding-top: 4px;\"" : ""}; style="padding-top: 4px;">${task.content}</span>
                 </div>
             </li>
             `;
