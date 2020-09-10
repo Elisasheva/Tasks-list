@@ -1,5 +1,11 @@
 # My simple task list
 
-## Click url to view!
+It's a simple program written in JavaScript for creating quick and simple task list.
 
-https://elisasheva.github.io/tasks-list/
+## Overview
+
+[Click to try it out](https://elisasheva.github.io/tasks-list/)
+
+## Screenshot
+
+![screenshot](https://i.ibb.co/jf6sGYQ/task-list.jpg)
